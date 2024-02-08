@@ -22,7 +22,7 @@ img{
 }
 
 #animation-2{
-    animation: imageShrink 10s infinite;
+    animation: imageShrink 5s infinite;
 }
 
 p{
