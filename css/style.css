@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container{
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+img{
+    width: 75%;
+    
+}
+
+#animation-1{
+    animation: borderAnimation 10s infinite;
+}
+
+#animation-2{
+    animation: imageShrink 10s infinite;
+}
+
+p{
+    animation: textColor 10s infinite;
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: rgb(51, 91, 87);
+    border:outset 1px black ;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.item img{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+@keyframes borderAnimation {
+    0%{
+    border: 10px solid red;
+    }
+    25%{
+        border: 10px solid rgb(255, 119, 0);  
+    }
+    50%{
+        border: 10px solid rgb(255, 242, 0); 
+    }
+    75%{
+        border: 10px solid rgb(13, 255, 0);
+    }
+    100%{
+        border: 10px solid rgb(0, 0, 255);
+    }
+}
+
+@keyframes imageShrink{
+        0%{
+            width: 20px;
+        }
+        25%{
+            width: 40px;
+        }
+        50%{
+            width: 60px;
+        }
+        75%{
+            width: 80px;
+        }
+        100%{
+            width: 100px;
+        }
+}
+
+@keyframes textColor {
+    0%{
+        color: red;
+    }
+    25%{
+        color: rgb(212, 255, 0);
+    }
+    50%{
+        color: rgb(0, 102, 255);
+    }
+    75%{
+        color: rgb(117, 0, 206);
+    }
+    100%{
+        color: rgb(255, 0, 119);
+    }
+}
